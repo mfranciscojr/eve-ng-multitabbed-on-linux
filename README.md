@@ -18,7 +18,7 @@ sudo gedit /usr/bin/eve-ng-integration
 
 - Change the _terminal_emulator_cmd(self) class
 ```
-if self.override_terminal:
+        if self.override_terminal:
             return self.override_terminal.split()
         elif self._is_command('x-terminal-emulator'):
             return ['konsole', '--new-tab', '-e']
