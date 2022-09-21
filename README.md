@@ -40,6 +40,15 @@ sudo gedit /usr/bin/eve-ng-integration
         else:
             return ['konsole', '--new-tab', '-e']
 ```
+
+- Edit exec environmente to make it work.
+
+```
+sudo gedit /usr/share/applications/eve-ng-integration.desktop
+Exec=env OVERRIDE_TERMINAL_CMD="konsole --new-tab -e" eve-ng-integration %u
+
+```
+
 - Restart and test the terminal.
 - have fun.
  
